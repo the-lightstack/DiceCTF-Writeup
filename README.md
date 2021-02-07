@@ -10,3 +10,4 @@ cookies which greatly hints towards a cross site scripting attack (XSS) -- So le
 When you try to access `<site>?name=<script>alert(1)</script>` , nothing happens though. If you have a look at the main sites html using burp to intercept to
 the request, you see that, the "View Fruit" link works with javascript and it has a nonce value set!
 
+![Burp request intercept](https://github.com/the-lightstack/DiceCTF-Writeup/blob/main/burp_babier_csp.png)
