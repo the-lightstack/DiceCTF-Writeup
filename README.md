@@ -31,9 +31,9 @@ Now was the time I had a look into the [CSP](https://developer.mozilla.org/en-US
 For the challenge website this header is set to following:
 `Content-Security-Policy: default-src none; script-src 'nonce-LRGWAXOY98Es0zz0QOVmag==';`
 
-This means first disallow every outgoing request and only allow requests for a script source, if the script has the nonce value = <nonce-value> set.
-([Tool for checking CSP'S](https://csp-evaluator.withgoogle.com/))
-Using base tags would have been another option to exploit this.
+This means first disallow every outgoing request and only allow requests for a script source, if the script has the nonce value = <nonce-value> set.<br>
+([Tool for checking CSP'S](https://csp-evaluator.withgoogle.com/))<br>
+Using base tags would have been another option to exploit this.<br>
 
 So we may fetch a script source to where ever we want to!
 
