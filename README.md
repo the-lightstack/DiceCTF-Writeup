@@ -81,7 +81,7 @@ Hey!
 <br>
 
 ## TL;DR
-Add nonce value to script tag and fetch script src with cookie appended to circumvent the CSP.
+Add nonce value to the script tag and fetch script src with cookie appended to circumvent the CSP.
 <br>
 
 Thanks for reading and hope you learned something new,<br>
