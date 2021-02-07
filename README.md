@@ -1,6 +1,6 @@
 # DiceCTF-Writeup
 # Babier CSP Challenge by notdeghost
-([TL;DR at the bottom](#TL;DR)
+[TL;DR at the bottom](#tldr)
 ## Getting XSS
 When you visit the [challenge website](https://babier-csp.dicec.tf/) you are welcomed by a link with the name 'View Fruit'.
 When clicked, it adds the get paramater ?name to the url with the value of a random Fruit.
