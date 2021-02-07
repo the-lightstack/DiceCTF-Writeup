@@ -78,9 +78,9 @@ If you want more CSP, you should try Adult CSP.
 ```
 Hey!
 `dice{web_1s_a_stat3_0f_grac3_857720}` is our flag!
-
-Thanks for reading and hope you learned something new,
-LightStack
+<br>
+Thanks for reading and hope you learned something new,<br>
+LightStack<br>
 
 
 
