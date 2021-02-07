@@ -1,6 +1,6 @@
 # DiceCTF-Writeup
 # Babier CSP Challenge by notdeghost
-
+(TL;DR at the bottom)
 ## Getting XSS
 When you visit the [challenge website](https://babier-csp.dicec.tf/) you are welcomed by a link with the name 'View Fruit'.
 When clicked, it adds the get paramater ?name to the url with the value of a random Fruit.
@@ -79,6 +79,9 @@ If you want more CSP, you should try Adult CSP.
 Hey!
 `dice{web_1s_a_stat3_0f_grac3_857720}` is our flag!
 <br>
+## TL;DR
+Add nonce value to script tag and fetch script src with cookie appended to circumvent the CSP.
+
 Thanks for reading and hope you learned something new,<br>
 LightStack<br>
 
